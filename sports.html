@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sports | My News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="logo">myNews</span>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="sports.html">Sports</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" id="signInLink">Sign in</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <h1>Sports</h1>
+            <p>Scores, stories and analysis from the world of sports.</p>
+        </div>
+    </header>
+
+
+    <main class="container main-layout">
+
+        <section class="main-content">
+            <a href="news.html?story=4" class="story-link">
+                <article class="lead-story">
+                    <p class="tag">FEATURED MATCH</p>
+                    <h2>National team secures dramatic win in final over</h2>
+                    <p class="meta">Cricket · Updated 1 hour ago</p>
+                    <p class="summary">
+                        A nail-biting finish saw the national side chase down a tough target
+                        with just two balls to spare, sealing the series 3–2.
+                    </p>
+                </article>
+            </a>
+
+            <h3 class="section-title">Latest in Sports</h3>
+            <div class="story-list">
+                <a href="news.html?story=5" class="story-link">
+                    <article class="story-card">
+                        <h4>Star striker scores hat-trick in league clash</h4>
+                        <p class="meta">Football · 30 mins ago</p>
+                        <p>Fans were treated to an attacking masterclass as the home side
+                           dominated from the first whistle.</p>
+                    </article>
+                </a>
+
+                <a href="news.html?story=6" class="story-link">
+                    <article class="story-card">
+                        <h4>Badminton pair enters semifinals of major tournament</h4>
+                        <p class="meta">Badminton · 2 hours ago</p>
+                        <p>The duo displayed superb coordination and defense to overcome
+                           the top-seeded opponents.</p>
+                    </article>
+                </a>
+
+                <a href="news.html?story=7" class="story-link">
+                    <article class="story-card">
+                        <h4>Young athlete breaks national record in 100m sprint</h4>
+                        <p class="meta">Athletics · 4 hours ago</p>
+                        <p>The 19-year-old clocked a stunning time to set a new benchmark
+                           at the national championship.</p>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h3>Popular Sports Stories</h3>
+                <ul>
+                    <li><a href="#">Top 10 moments of this season</a></li>
+                    <li><a href="#">Five youngsters to watch out for</a></li>
+                    <li><a href="#">How fitness has changed modern sport</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>Upcoming Fixtures</h3>
+                <ul>
+                    <li>Cricket: India vs Australia – Sunday</li>
+                    <li>Football: League Final – Next week</li>
+                    <li>Hockey: National Cup – This month</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+
+    <div id="signinOverlay" class="overlay hidden"></div>
+
+    <div id="signinModal" class="signin-modal hidden">
+        <div class="signin-header">
+            <h2>Sign in</h2>
+            <button id="closeSignin" class="close-btn">X</button>
+        </div>
+
+        <form id="signinForm">
+            <label for="signinEmail">Email</label>
+            <input type="email" id="signinEmail" placeholder="you@example.com">
+
+            <label for="signinPassword">Password</label>
+            <input type="password" id="signinPassword" placeholder="Enter password">
+
+            <p id="signinError" class="error-message"></p>
+            <p id="signinSuccess" class="success-message"></p>
+
+            <button type="submit" class="signin-submit">Sign in</button>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 myNews Media. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
