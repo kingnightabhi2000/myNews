@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | My News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="logo">myNews</span>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="sports.html">Sports</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" id="signInLink">Sign in</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Learn more about our newsroom and what we do.</p>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 800px; margin: 20px auto;">
+        <section class="main-content">
+            <article class="story-card">
+                <h2>Our Mission</h2>
+                <p>
+                    myNews is an independent digital news portal committed to bringing you
+                    clear, accurate and thoughtful reporting. Our goal is to make complex
+                    issues easy to understand without losing depth.
+                </p>
+            </article>
+
+            <article class="story-card">
+                <h2>What We Cover</h2>
+                <p>
+                    We cover national and local news, politics, sports, culture, technology,
+                    and more. Our reporters and contributors work to provide context,
+                    analysis and stories that matter to everyday readers.
+                </p>
+            </article>
+
+            <article class="story-card">
+                <h2>How We Work</h2>
+                <p>
+                    Our team believes in basic journalistic values: verification,
+                    fairness and accountability. We strive to present multiple viewpoints
+                    and always correct our mistakes when they happen.
+                </p>
+            </article>
+        </section>
+    </main>
+
+
+    <div id="signinOverlay" class="overlay hidden"></div>
+
+    <div id="signinModal" class="signin-modal hidden">
+        <div class="signin-header">
+            <h2>Sign in</h2>
+            <button id="closeSignin" class="close-btn">X</button>
+        </div>
+
+        <form id="signinForm">
+            <label for="signinEmail">Email</label>
+            <input type="email" id="signinEmail" placeholder="you@example.com">
+
+            <label for="signinPassword">Password</label>
+            <input type="password" id="signinPassword" placeholder="Enter password">
+
+            <p id="signinError" class="error-message"></p>
+            <p id="signinSuccess" class="success-message"></p>
+
+            <button type="submit" class="signin-submit">Sign in</button>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 myNews Media. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
