@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="top-bar">
+        <div class="container">
+            <span class="logo">myNews</span>
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="sports.html">Sports</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" id="signInLink">Sign in</a>
+            </nav>
+        </div>
+    </div>
+
+
+    <header class="header">
+        <div class="container">
+            <h1>Independent. In-depth. Informative.</h1>
+            <p>Your daily dose of news, analysis, and opinion.</p>
+        </div>
+    </header>
+
+
+    <main class="container main-layout">
+
+
+        <section class="main-content">
+
+            <a href="news.html?story=1" class="story-link">
+                <article class="lead-story">
+                    <p class="tag">TOP STORY</p>
+                    <h2>Government announces new policy on education reforms</h2>
+                    <p class="meta">Updated · 2 hours ago · New Delhi</p>
+                    <p class="summary">
+                        The central government has unveiled a fresh set of reforms focusing on skill-based 
+                        learning, digital classrooms, and teacher training to modernize the education system.
+                    </p>
+                </article>
+            </a>
+
+
+            <h3 class="section-title">Latest News</h3>
+            <div class="story-list">
+                <a href="news.html?story=2" class="story-link">
+                    <article class="story-card">
+                        <h4>Heavy rains disrupt normal life in several cities</h4>
+                        <p class="meta">Weather · 30 mins ago</p>
+                        <p>
+                            Several regions reported waterlogging, traffic jams, and power cuts after 
+                            overnight rainfall continued through the morning.
+                        </p>
+                    </article>
+                </a>
+
+                <a href="news.html?story=3" class="story-link">
+                    <article class="story-card">
+                        <h4>Startup ecosystem sees record funding this quarter</h4>
+                        <p class="meta">Business · 1 hour ago</p>
+                        <p>
+                            Investors continue to back early-stage companies in fintech, health tech, and 
+                            edtech sectors despite global uncertainty.
+                        </p>
+                    </article>
+                </a>
+
+                <a href="news.html?story=4" class="story-link">
+                    <article class="story-card">
+                        <h4>National team registers historic win in final match</h4>
+                        <p class="meta">Sports · 3 hours ago</p>
+                        <p>
+                            With a thrilling chase in the last over, the team clinched the trophy and broke 
+                            several long-standing records.
+                        </p>
+                    </article>
+                </a>
+            </div>
+
+
+            <h3 class="section-title">Opinion & Analysis</h3>
+            <div class="story-list">
+                <article class="story-card">
+                    <h4>Why local journalism matters more than ever</h4>
+                    <p class="meta">Opinion · By Staff Writer</p>
+                    <p>
+                        In an era of misinformation, local reporting plays a key role in keeping 
+                        communities informed and empowered.
+                    </p>
+                </article>
+
+                <article class="story-card">
+                    <h4>The changing face of online education</h4>
+                    <p class="meta">Analysis · By Guest Contributor</p>
+                    <p>
+                        Online learning is transforming classrooms, but questions remain about access, 
+                        quality, and long-term impact.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <aside class="sidebar">
+
+            <div class="sidebar-box">
+                <h3>Trending</h3>
+                <ul>
+                    <li><a href="#">Fuel prices revised across major cities</a></li>
+                    <li><a href="#">Tech companies announce mass hiring plans</a></li>
+                    <li><a href="#">New metro line inaugurated in capital</a></li>
+                    <li><a href="#">Film festival kicks off with grand opening</a></li>
+                </ul>
+            </div>
+
+
+            <div class="sidebar-box">
+                <h3>Newsletter</h3>
+                <p>Get the best stories delivered to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+
+            <div class="sidebar-box">
+                <h3>Explainers</h3>
+                <ul>
+                    <li><a href="#">What the new data bill means for you</a></li>
+                    <li><a href="#">Understanding inflation in simple terms</a></li>
+                    <li><a href="#">How climate change affects monsoon</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+
+    <div id="signinOverlay" class="overlay hidden"></div>
+
+    <div id="signinModal" class="signin-modal hidden">
+        <div class="signin-header">
+            <h2>Sign in</h2>
+            <button id="closeSignin" class="close-btn">X</button>
+        </div>
+
+        <form id="signinForm">
+            <label for="signinEmail">Email</label>
+            <input type="email" id="signinEmail" placeholder="you@example.com">
+
+            <label for="signinPassword">Password</label>
+            <input type="password" id="signinPassword" placeholder="Enter password">
+
+            <p id="signinError" class="error-message"></p>
+            <p id="signinSuccess" class="success-message"></p>
+
+            <button type="submit" class="signin-submit">Sign in</button>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2025 myNews Media. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
